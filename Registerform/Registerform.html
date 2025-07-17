@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="Registerform.css">
+</head>
+<body>
+    <h1>Register Form</h1>
+
+    <div class="main">
+        <form id="registerForm">
+            <!-- Name -->
+            <div class="name-section">
+                <label for="nameInput">Name:</label><br>
+                <input class="input-field" data-key="name" type="text" id="nameInput" placeholder="Enter name">
+                <div class="error"><ul><li>Enter only alphabets</li></ul></div>
+                <div class="empty"><ul><li>Fill the name</li></ul></div>
+            </div>
+
+            <!-- Email -->
+            <div class="email-section">
+                <label for="emailInput">Email:</label><br>
+                <input class="input-field" data-key="email" type="email" id="emailInput" placeholder="Enter email">
+                <div class="error"><ul><li>Enter a valid email address (e.g., example@mail.com)</li></ul></div>
+                <div class="empty"><ul><li>Fill the email</li></ul></div>
+            </div>
+
+            <!-- Phone -->
+            <div class="phone-section">
+                <label for="phonenumber">Phone Number:</label><br>
+                <input class="input-field" data-key="phone" id="phonenumber" type="text" placeholder="Enter phone number">
+                <div class="error"><ul><li>Enter a 10-digit number</li></ul></div>
+                <div class="empty"><ul><li>Fill the number</li></ul></div>
+            </div>
+
+            <!-- Password -->
+            <div class="password-section">
+                <label for="passwordInput">Password:</label><br>
+                <input class="input-field" data-key="password" id="passwordInput" type="password" placeholder="Enter password">
+                <div class="error">
+                    <ul>
+                        <li>At least 8 characters</li>
+                        <li>Must include uppercase, lowercase,
+                        <li>number</li> 
+                        <li>special character</li>
+                        <li>No spaces allowed</li>
+                    </ul>
+                </div>
+                <div class="empty"><ul><li>Fill the password</li></ul></div>
+            </div>
+
+            <!-- Submit -->
+            <div class="submit-button">
+                <button class="submit-btn" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="Registerform.js"></script>
+</body>
+</html>

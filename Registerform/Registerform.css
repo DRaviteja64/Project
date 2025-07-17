@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 40px;
+    background: rgb(179, 145, 145);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-section, .phone-section, .password-section, .email-section {
+    background-color: #ffffffcc;
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    width: 340px;
+    padding: 20px 60px 30px 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: 600;
+    font-size: 15px;
+    color: #333;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    border-color: #00bcd4;
+    outline: none;
+    background-color: #f0faff;
+}
+
+.error, .empty {
+    
+    background-color: #ffe5e5;
+    border-left: 4px solid #e60000;
+    padding: 10px;
+    font-size: 13px;
+    color: #a70000;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.display-none {
+    display: none;
+}
+
+.submit-button {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #85d2dc;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    font-size: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 188, 212, 0.4);
+}
+
+button:hover {
+    background-color: #0097a7;
+}
+
